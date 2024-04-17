@@ -13,10 +13,14 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(quantity: u32) -> u32 {
+    if quantity > 40 {
+        quantity * 1 // 购买数量超过40，每个苹果1 rustbuck
+    } else {
+        quantity * 2 // 购买数量不超过40，每个苹果2 rustbucks
+    }
+}
 
 // Don't modify this function!
 #[test]
